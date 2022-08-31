@@ -9,31 +9,41 @@ Now it's time to deploy the tag library onto your website.
 
 ## Create a library
 
-First, you must create a library that includes the extensions, rules, and data element you have created. To create a library, select [!UICONTROL Publishing Flow] in the left-hand menu.
+First, you must create a library that includes the extensions, rules, and data element you have created. 
 
-Select [!UICONTROL Add Library].
+1. To create a library, select **[!UICONTROL Publishing Flow]** in the left side menu.
+
+1. Select **[!UICONTROL Add Library]**.
 
 You should see the library creation view.
 
 ![tag library creation](../assets/tags-library-creation.png)
 
-Give the library a name, like _Demo_. Select [!UICONTROL Development] in the [!UICONTROL Environment] dropdown. Then click [!UICONTROL Add All Changed Resources].
+1. Give the library a name, like **_Demo_**. 
 
-You should now see all your extensions, rules, and data element listed under [!UICONTROL Resource Changes]. Click [!UICONTROL Save & Build to Development].
+1. Select **[!UICONTROL Development]** in the [!UICONTROL Environment] dropdown. 
+
+1. Next, click **[!UICONTROL Add All Changed Resources]**.
+
+You should now see all your extensions, rules, and data element listed under [!UICONTROL Resource Changes]. 
+
+1. Click **[!UICONTROL Save & Build to Development]**.
 
 ## Add the embed code to your HTML
 
 Now you must add a script tag to your product page HTML that loads the newly built tag library.
 
-Start by clicking [!UICONTROL Environments] in the left-hand menu. You should see three different environments listed. 
+1. Start by clicking **[!UICONTROL Environments]** in the left-hand menu. You should see three different environments listed. 
 
 ![Tags environments](../assets/tags-environments.png)
 
-Click the package icon on the [!UICONTROL Development] environment row. You should see instructions for installing the Launch library script onto your page.
+1. Click the package icon on the **[!UICONTROL Development]** environment row under the _Install_ column. You should see instructions for installing the Launch library script onto your page.
 
 ![Tags installation instructions](../assets/tags-installation-instructions.png)
 
-Copy the script tag (there's a copy-to-clipboard button for convenience). Open your product page HTML and insert the script tag before the `</head>` tag. Your final HTML should look as follows:
+1. Copy the script tag (there's a copy-to-clipboard button for convenience). 
+
+1. Open your product page HTML and insert the script tag before the `</head>` tag. Your final HTML should look as follows:
 
 ```html
 <!DOCTYPE html>
@@ -110,4 +120,4 @@ Next, you'll test your new implementation!
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-use-adobe-experience-platform-data/m-p/543877)

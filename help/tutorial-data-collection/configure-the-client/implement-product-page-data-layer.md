@@ -5,11 +5,11 @@ exl-id: 0debf34a-48d4-4029-b790-7fd78865c334
 ---
 # Implement a data layer on a product page
 
-For this tutorial, you'll implement the Adobe Client Data Layer for a typical e-commerce website. If you have not already done so, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand how the Adobe Client Data Layer operates.
+For this tutorial, you implement the Adobe Client Data Layer for a typical e-commerce website. If you have not already done so, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand the Adobe Client Data Layer.
 
 Let's assume the user browses your products and clicks on a foam roller to learn more. The user lands on the foam roller product detail page.
 
-Here's the HTML for your simple product detail page:
+1. Create the simple product details page using the HTML code that follows:
 
 ```html
 <!DOCTYPE html>
@@ -29,9 +29,9 @@ Here's the HTML for your simple product detail page:
 </html>
 ```
 
-As you may have noticed, inside the `<head>` tag there is a `<script>` tag. This is where you'll place your JavaScript code. It's not necessary to place the `<script>` tag within `<head>`, but pushing data to the data layer as soon as possible helps ensure it's quickly available for the marketer to send to Adobe Experience Platform before the user leaves the page.
+As you may have noticed, inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. It's not necessary to place the `<script>` tag within `<head>`, but pushing data to the data layer as soon as possible helps ensure it's quickly available for the marketer to send to Adobe Experience Platform before the user leaves the page.
 
-Inside the `<script>` tag, you'll start out by creating the `adobeDataLayer` array and then pushing appropriate event and data information into the array. The data conforms to the XDM schema [you previously created](../configure-the-server/create-a-schema.md).
+1. Inside the `<script>` tag, add this code that creates the `adobeDataLayer` array and then pushes appropriate event and data information into the array. The data conforms to the XDM schema [you previously created](../configure-the-server/create-a-schema.md).
 
 ```js
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -67,7 +67,7 @@ The second push to the data layer notifies listeners (tags rules) that the user 
 
 You likely also want to track when the user clicks on the [!UICONTROL Add to cart] button.
 
-To do this, create a function that is called when the user clicks the [!UICONTROL Add to cart] button.
+1. To do this, copy and paste this code after the above data layer code. The function is called when the user clicks the [!UICONTROL Add to cart] button.
 
 ```js
 window.onAddToCartClick = function() {
@@ -85,9 +85,9 @@ window.onAddToCartClick = function() {
 };
 ```
 
-When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you'll push a `cartOpened` event into the data layer. Subsequently, you'll push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you push a `cartOpened` event into the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
 
-Add an `onclick` attribute to the [!UICONTROL Add to cart] button that calls your new `onAddToCartClick` function.
+1. Add an `onclick` attribute to the [!UICONTROL Add to cart] button that calls your new `onAddToCartClick` function.
 
 The result of your HTML page should look as follows:
 
@@ -144,9 +144,9 @@ The result of your HTML page should look as follows:
 
 ## Download the app
 
-One last thing to do is track when the user clicks the _[!UICONTROL Download the app]_ link.
+One last thing to track is when the user clicks the _[!UICONTROL Download the app]_ link.
 
-To do this, create a function that is called when the user clicks the _[!UICONTROL Download the app]_ link.
+1. To do this, copy and paste this code below the add to cart code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
 
 ```js
 window.onDownloadAppClick = function(event) {
@@ -167,7 +167,7 @@ window.onDownloadAppClick = function(event) {
 
 In this case, the information about the link is wrapped inside an `eventInfo` key. As discussed in [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md), this tells the data layer to communicate this data along with the event, but to _not_ retain the data within the data layer. For a link click, it's not useful to add information about the clicked link to the data layer because it doesn't pertain to the page as a whole and is not applicable to other events that may occur.
 
-Add an `onclick` attribute to the [!UICONTROL Download the app] link that calls your new `onDownloadAppClick` function.
+1. Add an `onclick` attribute to the [!UICONTROL Download the app] link that calls your new `onDownloadAppClick` function.
 
 The result of your HTML page should look as follows:
 
@@ -240,4 +240,4 @@ The result of your HTML page should look as follows:
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-use-adobe-experience-platform-data/m-p/543877)
