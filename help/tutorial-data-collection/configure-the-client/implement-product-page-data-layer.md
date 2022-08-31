@@ -67,7 +67,7 @@ The second push to the data layer notifies listeners (tags rules) that the user 
 
 You likely also want to track when the user clicks on the [!UICONTROL Add to cart] button.
 
-1. To do this, copy andj paste this code after the above data layer code. The function is called when the user clicks the [!UICONTROL Add to cart] button.
+1. To do this, copy and paste this code after the above data layer code. The function is called when the user clicks the [!UICONTROL Add to cart] button.
 
 ```js
 window.onAddToCartClick = function() {
