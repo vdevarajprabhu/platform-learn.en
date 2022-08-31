@@ -5,7 +5,7 @@ exl-id: 0debf34a-48d4-4029-b790-7fd78865c334
 ---
 # Implement a data layer on a product page
 
-For this tutorial, you'll implement the Adobe Client Data Layer for a typical e-commerce website. If you have not already done so, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand how the Adobe Client Data Layer operates.
+For this tutorial, you implement the Adobe Client Data Layer for a typical e-commerce website. If you have not already done so, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand the Adobe Client Data Layer.
 
 Let's assume the user browses your products and clicks on a foam roller to learn more. The user lands on the foam roller product detail page.
 
@@ -29,7 +29,7 @@ Let's assume the user browses your products and clicks on a foam roller to learn
 </html>
 ```
 
-As you may have noticed, inside the `<head>` tag there is a `<script>` tag. This is where you'll place your JavaScript code. It's not necessary to place the `<script>` tag within `<head>`, but pushing data to the data layer as soon as possible helps ensure it's quickly available for the marketer to send to Adobe Experience Platform before the user leaves the page.
+As you may have noticed, inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. It's not necessary to place the `<script>` tag within `<head>`, but pushing data to the data layer as soon as possible helps ensure it's quickly available for the marketer to send to Adobe Experience Platform before the user leaves the page.
 
 1. Inside the `<script>` tag, add this code that creates the `adobeDataLayer` array and then pushes appropriate event and data information into the array. The data conforms to the XDM schema [you previously created](../configure-the-server/create-a-schema.md).
 
@@ -85,7 +85,7 @@ window.onAddToCartClick = function() {
 };
 ```
 
-When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you'll push a `cartOpened` event into the data layer. Subsequently, you'll push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you push a `cartOpened` event into the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
 
 1. Add an `onclick` attribute to the [!UICONTROL Add to cart] button that calls your new `onAddToCartClick` function.
 
@@ -144,7 +144,7 @@ The result of your HTML page should look as follows:
 
 ## Download the app
 
-One last thing to do is track when the user clicks the _[!UICONTROL Download the app]_ link.
+One last thing to track is when the user clicks the _[!UICONTROL Download the app]_ link.
 
 1. To do this, copy and paste this code below the add to cart code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
 

@@ -13,15 +13,15 @@ In this tutorial, we discuss a strategy for:
 1. Managing your data in the browser and communicating that certain events have occurred, and 
 1. Reacting to such events by sending relevant data to Adobe Experience Platform.
 
-While this tutorial uses the Adobe Client Data Layer, Adobe Experience Platform Web SDK, and the tags feature for a more prescriptive, seamless implementation, you can also mix and match these tools with third-party or in-house tools for ultimate flexibility.
+While this tutorial uses the Adobe Client Data Layer, Adobe Experience Platform Web SDK, and the [!DNL Tags] feature for a more prescriptive, seamless implementation, you can also mix and match these tools with third-party or in-house tools for ultimate flexibility.
 
 ## Example Scenario
 
 During this tutorial, you implement data collection for a simple product page on an e-commerce site:
 
-1. The product page is loaded in the browser. Here you'll track that the user has viewed the product. 
-1. The user decides to purchase the product, so they click a button to add the product to their cart. Here, you'll track that the user has opened a new cart and added the product to the cart by sending experience events to Adobe Experience Platform. 
-1. Finally, the user clicks a _Download the app_ link because they are interested in your mobile app. You'll track that the user has clicked the link. 
+1. The product page is loaded in the browser. Here you track that the user has viewed the product. 
+1. The user decides to purchase the product, so they click a button to add the product to their cart. Here, you track that the user has opened a new cart and added the product to the cart by sending experience events to Adobe Experience Platform. 
+1. Finally, the user clicks a _Download the app_ link because they are interested in your mobile app. You track that the user has clicked the link. 
 
 Let's get started!
 

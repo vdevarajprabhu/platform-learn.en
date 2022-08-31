@@ -13,7 +13,7 @@ After the page loads, you should see something like this:
 
 ![Webpage](assets/webpage.png)
 
-It's not pretty, but it will do the job.
+It's not pretty, but it does the job.
 
 ## Inspect the page view and product view events
 
@@ -46,7 +46,7 @@ You should see two additional requests, the first with an `eventType` of `commer
 
 ## Inspect the download app link click event
 
-Depending on the browser, clicking a link that navigates you away from the current page may clear out your network panel. Because you want to inspect the network request for the link click event that occurs right before you navigate away from the page, you'll need to configure your browser to preserve network logs across pages. 
+Depending on the browser, clicking a link that navigates you away from the current page may clear out your network panel. Because you want to inspect the network request for the link click event that occurs right before you navigate away from the page, you need to configure your browser to preserve network logs across pages. 
 
 1. Preserve network logs by either checking a **_Preserve log_** checkbox in the network panel (Chrome, Safari, Edge) or clicking a gear icon and checking a **_Persist logs_** item on the displayed menu (Firefox).
 
@@ -58,13 +58,13 @@ You should see one more `interact` request show up in the network panel.
 
 ## Check that data arrives in the Adobe Experience Platform dataset
 
-Now that requests are being sent, you'll also want to check whether the data is safely arriving in the Adobe Experience Platform dataset you created. 
+Now that requests are being sent, check whether the data is safely arriving in the Adobe Experience Platform dataset  you created. 
 
 1. Navigate to the **[!UICONTROL Datasets]** view inside Adobe Experience Platform.
 
-1. Select the [dataset](configure-the-server/create-a-dataset.md) you created for this tutorial.
+1. Select the [dataset](configure-the-server/create-a-dataset.md) that you created for this tutorial.
 
-You may need to wait a few minutes, but soon you should see indications of data being processed and inserted into your dataset. You should also see whether processing succeeded or failed. If it failed, you'll be able to see why it failed. Failures typically occur because the data you are sending does not match the schema and you'll need to adjust your data or schema accordingly.
+You may need to wait a few minutes, but soon you should see indications of data being processed and inserted into your dataset. You should also see whether processing succeeded or failed. If it failed, you see why it failed. Failures typically occur because the data you are sending does not match the schema and you need to adjust your data or schema accordingly.
 
 ![Dataset ingestion](assets/dataset-ingestion.png)
 

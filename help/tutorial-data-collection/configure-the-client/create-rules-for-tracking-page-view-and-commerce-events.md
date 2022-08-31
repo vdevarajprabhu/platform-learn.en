@@ -47,7 +47,7 @@ Your rule should now be complete.
 
 ## Repeat the process
 
-Repeat the process outlined above to create rules for when a product is viewed, a shopping cart is opened, and a product is added to the cart. The only differences among the rules will be the rule name, the value entered into the [!UICONTROL Event / Key to register for] field in the [!UICONTROL Data Pushed] event, and the [!UICONTROL Type] field in the [!UICONTROL Send event] action. Here are the values for each rule:
+Repeat the process outlined above to create rules for when a product is viewed, a shopping cart is opened, and a product is added to the cart. The only differences among the rules are the rule name, the value entered into the [!UICONTROL Event / Key to register for] field in the [!UICONTROL Data Pushed] event, and the [!UICONTROL Type] field in the [!UICONTROL Send event] action. Here are the values for each rule:
 
 Product-viewed rule:
 
@@ -67,7 +67,7 @@ Product added to cart rule:
 * **Event / Key to register for** within [!UICONTROL Data Pushed] event: `productAddedToCart`
 * **Type** within [!UICONTROL Send event] action: `commerce.productListAdds` 
 
-Next, we'll handle tracking clicks on the [!UICONTROL Download the app] link.
+Next, we handle tracking clicks on the [!UICONTROL Download the app] link.
 
 [Next: **Create a data element and rule for tracking app downloads**](create-a-data-element-and-rule-for-tracking-app-downloads.md)
 

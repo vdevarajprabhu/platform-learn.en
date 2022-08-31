@@ -25,9 +25,9 @@ window.adobeDataLayer.push({
 
 You used the `eventInfo` key, which tells the data layer to communicate this data along with the event, but to _not_ retain the data within the data layer. For a link click, it's not useful to add information about the clicked link to the data layer because it's not applicable to other events that may occur later on the page.
 
-For this implementation, you'll send an experience event to Adobe Experience Platform containing the merged result of (1) the computed state of the data layer and (2) the contents of `eventInfo`.
+For this implementation, you send an experience event to Adobe Experience Platform containing the merged result of (1) the computed state of the data layer and (2) the contents of `eventInfo`.
 
-To do this, you'll first need to create a data element that merges these two chunks of information.
+To do this, you need to create a data element that merges these two chunks of information.
 
 ## Create a data element
 
@@ -43,7 +43,7 @@ To create the appropriate data element:
 
 1. For the [!UICONTROL Data Element Type] field, select **[!UICONTROL Merged Objects]**. This data element allows you to merge multiple objects. The merged result is returned by the data element.
 
-1. Add the first object you want to include in the merge. Enter `%event.fullState%` in the [!UICONTROL Object(required)] field. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the computed state of the Adobe Client Data Layer at the time the rule was triggered.
+1. Add the first object that you want to include in the merge. Enter `%event.fullState%` in the [!UICONTROL Object(required)] field. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the computed state of the Adobe Client Data Layer at the time the rule was triggered.
 
 1. Click the  **[!UICONTROL Add Another]** command.
 
@@ -93,9 +93,9 @@ Now that you're back at the rule view:
 
 1. For the [!UICONTROL XDM data] field, click the data element selector button to the right and select **[!UICONTROL computedStateAndEventInfo]**. This is the data element you recently created.
 
-1. For this rule (unlike the other rules you've created), you will check the **[!UICONTROL Document will unload]** checkbox. 
+1. For this rule (unlike the other rules you've created), check the **[!UICONTROL Document will unload]** checkbox. 
 
-This essentially tells the SDK that the user will navigate away from the page when they click the link. This is important, because it allows the SDK to make the request even if the user navigates away from the page, as the request will keep running in the background and reach the server. If this checkbox is unchecked, the request will not be made in this manner and therefore will likely be canceled when the current document unloads.
+This essentially tells the SDK that the user navigates away from the page when they click the link. This is important, because it allows the SDK to make the request even if the user navigates away from the page, as the request keeps running in the background and reach the server. If this checkbox is unchecked, the request won't be made in this manner and therefore will likely be canceled when the current document unloads.
 
 You may be asking yourself, "That sounds nice. Why isn't this option always enabled then?"
 
