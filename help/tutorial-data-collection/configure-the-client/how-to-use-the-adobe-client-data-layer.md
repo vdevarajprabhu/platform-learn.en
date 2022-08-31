@@ -7,7 +7,7 @@ exl-id: b5af9e72-aa6c-4cd7-80dd-b2de762a7523
 
 In [What's a data layer?](whats-a-data-layer.md), you learned there are two parts to consider when discussing data layers: the container and the content. The [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) is the container. It doesn't care how you [structure your data](../structuring-your-data.md) or what pieces of information you choose to put in your data. The data can be structured as [XDM](../structuring-your-data.md#xdm), as the examples below show, or you can build your own structure entirely.
 
-Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team then retrieves data from the data layer, preferably using the tags feature of Adobe Experience Platform, formerly Launch.
+Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team then retrieves data from the data layer, preferably using the Tags feature of Adobe Experience Platform, formerly named Launch.
 
 ## Pushing data to the data layer
 
@@ -104,14 +104,15 @@ window.adobeDataLayer.push({
 });
 ```
 
-<!--Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer.--> Also note that the `event` key is _not_ included in the computed state. It receives special treatment by the data layer.
+<!--Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer.--> Also note that the `event` key is not included in the computed state. It receives special treatment by the data layer.
+
 
 ## Pushing events and data to the data layer
 
 Notifying listeners that the user has entered a search query is helpful, but what if you would like to provide additional information about the event? For example, maybe you would like to include the user's search query. You can provide this data in one of two ways:
 
 1. Provide data so that it **is retained** in the data layer as part of the data layer's computed state.
-2. Provide data so that it **is not retained** in the data layer as part of the data layer's computed state.
+1. Provide data so that it **is not retained** in the data layer as part of the data layer's computed state.
 
 Whether you want to retain the data in the data layer usually depends on if you plan to reference that data throughout the duration of the user being on the page. If not, then retaining the data inside the data layer may just result in a cluttered data layer.
 
@@ -155,4 +156,4 @@ Each time you call `push`, the Adobe Client Data Layer notifies any listeners. L
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-use-adobe-experience-platform-data/m-p/543877)

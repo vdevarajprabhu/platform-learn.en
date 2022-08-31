@@ -31,47 +31,71 @@ To do this, you'll first need to create a data element that merges these two chu
 
 ## Create a data element
 
-To create the appropriate data element, click [!UICONTROL Data Elements] in the left-hand menu. Next, click the [!UICONTROL Add Data Element] link.
+To create the appropriate data element:
 
-For the data element name, enter `computedStateAndEventInfo`. For the [!UICONTROL Extension] field, select [!UICONTROL Core] if it isn't selected already. For the [!UICONTROL Data Element Type] field, select [!UICONTROL Merged Objects]. This data element allows you to deeply merge multiple objects. The merged result is returned by the data element.
+1. Click [!UICONTROL Data Elements] in the left side menu. 
 
-For the first object you want to include in the merge, enter `%event.fullState%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the computed state of the Adobe Client Data Layer at the time the rule was triggered.
+1. Next, click the [!UICONTROL Create New Data Element] link.
 
-Click [!UICONTROL Add Another].
+1. Enter the data element name, `computedStateAndEventInfo`. 
 
-For the second object, enter `%event.eventInfo%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the `eventInfo` portion that was pushed to the Adobe Client Data Layer.
+1. For the [!UICONTROL Extension] field, select [!UICONTROL Core] if it isn't selected already. 
+
+1. For the [!UICONTROL Data Element Type] field, select **[!UICONTROL Merged Objects]**. This data element allows you to merge multiple objects. The merged result is returned by the data element.
+
+1. Add the first object you want to include in the merge. Enter `%event.fullState%` in the [!UICONTROL Object(required)] field. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the computed state of the Adobe Client Data Layer at the time the rule was triggered.
+
+1. Click the  **[!UICONTROL Add Another]** command.
+
+1. Add the second object. Enter `%event.eventInfo%` in the [!UICONTROL Object(required)] field. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the `eventInfo` portion that was pushed to the Adobe Client Data Layer.
 
 ![computedStateAndEventInfo data element](../assets/computed-state-and-event-info-data-element.png)
 
-The data element is complete. Save the data element by clicking the [!UICONTROL Save] button.
+The data element is complete. 
+
+1. Save the data element by clicking the [!UICONTROL Save] button.
 
 ## Create a rule
 
-To create the rule for tracking clicks on the [!UICONTROL Download the app] link, first click [!UICONTROL Rules] in the left-hand menu.
+To create the rule for tracking clicks on the [!UICONTROL Download the app] link:
 
-Click [!UICONTROL Add Rule].
+1. Click **[!UICONTROL Rules]** in the left side menu.
 
-For the rule name, enter _Download app link clicked_.
+1. Click **[!UICONTROL Add Rule]**.
+
+1. Enter **_Download app link clicked_** in the [!UICONTROL Name] field.
 
 ## Add an event
 
-Click the [!UICONTROL Add] button under [!UICONTROL Events]. You show now be on the event view. For the [!UICONTROL Extension] field, select [!UICONTROL Adobe Client Data Layer]. For the [!UICONTROL Event Type] field, select [!UICONTROL Data Pushed].
+1. Click the **[!UICONTROL Add]** button under [!UICONTROL Events]. 
 
-Because you only want this rule to be triggered when the `downloadAppClicked` event is pushed to the data layer, select the [!UICONTROL Specific Event] radio under [!UICONTROL Listen to] and type _downloadAppClicked_ into the [!UICONTROL Event / Key to register for]  text field that is displayed.
+You show now be on the event view. 
+
+1. For the [!UICONTROL Extension] field, select **[!UICONTROL Adobe Client Data Layer]**. 
+
+1. For the [!UICONTROL Event Type] field, select **[!UICONTROL Data Pushed]**.
+
+Because you only want this rule to be triggered when the `downloadAppClicked` event is pushed to the data layer, select the **[!UICONTROL Specific Event]** radio under [!UICONTROL Listen to] and type **_downloadAppClicked_** into the [!UICONTROL Event / Key to register for]  text field that is displayed.
 
 ![Download app clicked event](../assets/download-app-clicked-event.png)
 
-Click [!UICONTROL Keep Changes].
+1. Click **[!UICONTROL Keep Changes]**.
 
 ## Add an action
 
-Now that you're back at the rule view, click the [!UICONTROL Add] button under [!UICONTROL Actions]. You should now be on the action view. For the [!UICONTROL Extension] field, select [!UICONTROL Adobe Experience Platform Web SDK]. For the [!UICONTROL Action Type] field, select [!UICONTROL Send event].
+Now that you're back at the rule view:
 
-On the right side of the screen, find the [!UICONTROL Type] field and select `web.webinteraction.linkClicks`.
+1. Click the **[!UICONTROL Add]** button under [!UICONTROL Actions]. 
 
-For the [!UICONTROL XDM data] field, click the data element selector button and select [!UICONTROL computedStateAndEventInfo]. This is the data element you just created.
+1. You should now be on the action view. For the [!UICONTROL Extension] field, select **[!UICONTROL Adobe Experience Platform Web SDK]**. For the [!UICONTROL Action Type] field, select **[!UICONTROL Send event]**.
 
-For this rule (unlike the other rules you've created), you will check the [!UICONTROL Document will unload] checkbox. This essentially tells the SDK that the user will be navigating away from the page when they click the link. This is important, because it allows the SDK to make the request in manner that even if the user navigates away from the page, the request will still keep running in the background and reach the server. If this checkbox is unchecked, the request will not be made in this manner and therefore will likely be canceled when the current document unloads.
+1. In the [!UICONTROL Type] field to the right, select `web.webinteraction.linkClicks`.
+
+1. For the [!UICONTROL XDM data] field, click the data element selector button to the right and select **[!UICONTROL computedStateAndEventInfo]**. This is the data element you recently created.
+
+1. For this rule (unlike the other rules you've created), you will check the **[!UICONTROL Document will unload]** checkbox. 
+
+This essentially tells the SDK that the user will navigate away from the page when they click the link. This is important, because it allows the SDK to make the request even if the user navigates away from the page, as the request will keep running in the background and reach the server. If this checkbox is unchecked, the request will not be made in this manner and therefore will likely be canceled when the current document unloads.
 
 You may be asking yourself, "That sounds nice. Why isn't this option always enabled then?"
 
@@ -79,7 +103,7 @@ Well, it's a bit complicated, but when using this feature, the SDK uses a browse
 
 ![Document will unload checkbox](../assets/document-will-unload.png)
 
-Save the action by clicking the [!UICONTROL Keep Changes] button.
+1. Save the action by clicking the **[!UICONTROL Keep Changes]** button.
 
 ## Save the rule
 
@@ -87,10 +111,10 @@ Your rule should now be complete.
 
 ![Download app link clicked rule](../assets/download-app-link-clicked-rule.png)
 
-Save the rule by clicking [!UICONTROL Save].
+1. Click **[!UICONTROL Save]** in the upper right corner.
 
 [Next: **Publish the library**](publish-the-library.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-use-adobe-experience-platform-data/m-p/543877)
