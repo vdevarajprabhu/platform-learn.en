@@ -31,7 +31,7 @@ Let's assume the user browses your products and clicks on a foam roller to learn
 </html>
 ```
 
-Inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. Although it's not reequired to place the `<script>` tag inside the `<head>` container, it is recommended. This ensures data is available to the data layer as soon as possible to support a variety of use cases.
+Inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. Although it's not required to place the `<script>` tag inside the `<head>` container, it is recommended. This ensures data is available to the data layer as soon as possible to support a variety of use cases.
 
 ## Add the Adobe Data Layer
 
@@ -67,7 +67,7 @@ The first push to the data layer notifies listeners (tag rules) that the user ha
 
 The second push to the data layer notifies listeners (tags rules) that the user has viewed a product. It also adds product information to the data layer. 
 
-## Add code for add to cart tracking
+## Add code for cart add tracking
 
 For this tutorial, you track when the user clicks on the [!UICONTROL Add to cart] button.
 
@@ -89,7 +89,7 @@ window.onAddToCartClick = function() {
 };
 ```
 
-This function first checks to see whether a cart already exists for a user.  If the cart does not exist, you push a `cartOpened` event to the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+This function initially checks to see whether a cart already exists for a user.  If the cart does not exist, you push a `cartOpened` event to the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
 
 ## Add attribute to add to cart button
 
@@ -152,7 +152,7 @@ The result of your HTML page should look as follows:
 
 One last thing to track is when the user clicks the _[!UICONTROL Download the app]_ link.
 
-1. To do this, copy and paste this code below the add to cart code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
+1. To do this, copy and paste this code below the cart add code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
 
 ```js
 window.onDownloadAppClick = function(event) {
