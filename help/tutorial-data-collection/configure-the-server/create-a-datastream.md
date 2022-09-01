@@ -12,20 +12,17 @@ To configure which Adobe products Edge Network shuttles data to and from, you mu
 ![Datastream product configuration](../assets/datastream-diagram.png)
 
 1. To create a datastream, you must first navigate to the Data Collection user interface. In the upper right corner of Platform, click on the **[!UICONTROL Application picker]** and select **[!UICONTROL Data Collection]** from the drop-down menu. 
-
+    ![Data collection menu](../assets/data-collection-menu.png)
 1. Once the Data Collection interface displays, select **[!UICONTROL Datastreams]** in the left navigation, and then the **[!UICONTROL New Datastream]** button in the upper right corner. 
-
 1. Provide a name for the datastream, select [the schema you previously created](create-a-schema.md) as the **[!UICONTROL Event Dataset]**, and select **[!UICONTROL Save]** (mapping is covered later).
+    ![Datastream name and description](../assets/datastream-name-description.png)
 
-![Datastream name and description](../assets/datastream-name-description.png)
+## Add service to datastream
 
 The next screen allows you to add which Adobe products and services should receive the data you send from your website. 
 
-1. Select the **[!UICONTROL Add Service]** command. For the purposes of this tutorial, enable only Adobe Experience Platform, select [the dataset you previously created](create-a-dataset.md) and select **[!UICONTROL Save]** in the upper right corner.
-
-![Datastream product configuration](../assets/datastream-product-configuration.png)
-
-Your datastream has been created.
+1. Select the **[!UICONTROL Add Service]** command. For the purposes of this tutorial, enable only Adobe Experience Platform, select [the dataset you previously created](create-a-dataset.md) and select **[!UICONTROL Save]** in the upper right corner. Your datastream has been created.
+    ![Datastream product configuration](../assets/datastream-product-configuration.png)
 
 ## Datastream environments
 
