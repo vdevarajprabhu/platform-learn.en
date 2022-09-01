@@ -13,13 +13,13 @@ We recommend you use the built-in field groups where possible when creating your
 
 Let's walk through creating a schema for a typical e-commerce website. 
 
-1. First, click on **[!UICONTROL Schemas]** under [!UICONTROL Data Management] in the left side menu in the Adobe Experience Platform interface.
+1. Select **[!UICONTROL Schemas]** under [!UICONTROL Data Management] from the left side menu in the Adobe Experience Platform interface.
 1. Select **[!UICONTROL Create schema]** in the top-right corner, and **[!UICONTROL XDM ExperienceEvent]** from the drop down menu.
 
 You are now on the schema builder canvas. 
     ![Schemas view](../assets/schemas-view.png)
 
- ## Add field groups
+## Add field groups
 
 1. In the **[!UICONTROL Field groups]** section on the left side of the **[!UICONTROL Structure]** area, select the **[!UICONTROL + Add]** link. At this point, a modal will display to choose the field groups to add to your schema. 
 1. First, select the field group named **[!UICONTROL AEP Web SDK ExperienceEvent]**. This field group adds a set of fields that accommodates data automatically collected by Adobe Experience Platform Web SDK. 
