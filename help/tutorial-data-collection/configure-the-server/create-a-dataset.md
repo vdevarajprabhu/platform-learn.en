@@ -11,20 +11,17 @@ In addition to describing the data you send into Adobe Experience Platform, you 
 >
 >Datasets are not required if you are only using Platform Web SDK to send data to Adobe Analytics, Adobe Target, and Adobe Audience Manager or using Event Forwarding. If you are only using Web SDK for those purposes, you can skip this page of the tutorial.
 
-1. To create a dataset, select **[!UICONTROL Datasets]** from the left side navigation in Adobe Experience Platform.
+1. Select **[!UICONTROL Datasets]** under [!UICONTROL Data Management] from the left side menu in Adobe Experience Platform.
+1. Next, select the **[!UICONTROL Create dataset]** command in the top-right corner.
+    ![Datasets view](../assets/datasets-view.png)
 
-![Datasets view](../assets/datasets-view.png)
+## Create a dataset from schema
 
-1. Select **[!UICONTROL Create dataset]** in the top-right corner.
-
-1. Select **[!UICONTROL Create dataset from schema]** and select [the schema you previously created](create-a-schema.md).
-
-![Schema selection](../assets/schema-selection.png)
-
+1. From the [!UICONTROL Workflow] interface, select the first tile, **[!UICONTROL Create dataset from schema]**.
+1. Search for the [the schema you previously created](create-a-schema.md) and select it.
+    ![Schema selection](../assets/schema-selection.png)
 1. Select **[!UICONTROL Next]** and provide a name and a description.
-
-![Dataset name and description](../assets/dataset-name-description.png)
-
+    ![Dataset name and description](../assets/dataset-name-description.png)
 1. Select **[!UICONTROL Finish]**. Your dataset has been created and is ready to receive data.
 
 As you begin to send data into a dataset, Adobe Experience Platform validates that the data you're attempting to place into the dataset conforms to the applied schema. If the data does not conform to the schema, the data is rejected and is not placed into the dataset. As a result of this validation step, consumers of the dataset (Adobe products, third parties, or your own company) can have some level of certainty regarding the structure and cleanliness of the dataset's data.

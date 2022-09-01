@@ -13,33 +13,27 @@ We recommend you use the built-in field groups where possible when creating your
 
 Let's walk through creating a schema for a typical e-commerce website. 
 
-1. First, navigate to the **[!UICONTROL Schemas]** view inside either the Adobe Experience Platform or Data Collection interface.
+1. Select **[!UICONTROL Schemas]** under [!UICONTROL Data Management] from the left side menu in the Adobe Experience Platform interface.
+1. Select **[!UICONTROL Create schema]** in the top-right corner, and **[!UICONTROL XDM ExperienceEvent]** from the drop down menu.
 
-![Schemas view](../assets/schemas-view.png)
+You are now on the schema builder canvas. 
+    ![Schemas view](../assets/schemas-view.png)
 
-1. Select **[!UICONTROL Create schema]** in the top-right corner. 
-1. Select **[!UICONTROL XDM ExperienceEvent]** from the menu.
-1. You are now on the schema builder canvas. In the **[!UICONTROL Field groups]** section on the left side of the **[!UICONTROL Structure]**, select the **[!UICONTROL + Add]** link.
+## Add field groups
 
-At this point, a modal will display to choose the field groups to add to your schema. 
-
+1. In the **[!UICONTROL Field groups]** section on the left side of the **[!UICONTROL Structure]** area, select the **[!UICONTROL + Add]** link. At this point, a modal will display to choose the field groups to add to your schema. 
 1. First, select the field group named **[!UICONTROL AEP Web SDK ExperienceEvent]**. This field group adds a set of fields that accommodates data automatically collected by Adobe Experience Platform Web SDK. 
-
-![AEP Web SDK mixin](../assets/aep-web-sdk-mixin.png)
-
+    ![AEP Web SDK mixin](../assets/aep-web-sdk-mixin.png)
 1. Next, because the website for this tutorial is an e-commerce website, select the **[!UICONTROL Commerce Details]** field group. This field group allows you to send typical commerce data like which products are being viewed, added to the cart, and purchased.
+1. Select the **[!UICONTROL Add field groups]** button at the top right of the dialog.
+    ![Commerce details mixin](../assets/commerce-details-mixin.png)
+1.  At this point, you should see the structure of your schema.
+    ![Schema with mixins](../assets/schema-with-mixins.png)
 
-![Commerce details mixin](../assets/commerce-details-mixin.png)
+## Save the schema
 
-1. Select the **[!UICONTROL Add field groups]** button at the top right of the dialog. At this point, you should see the structure of your schema.
-
-![Schema with mixins](../assets/schema-with-mixins.png)
-
-The field groups that you added are listed on the left. Selecting a field group highlights the fields on the right that were provided by that field group. Take a moment to explore the available fields.
-
-1. Finally, select **[!UICONTROL Untitled schema]** to the left of the **[!UICONTROL Structure]**. This displays the **[!UICONTROL Schema properties]** on the right side. Provide a name and description on the right of the screen, and select **[!UICONTROL Save]**.
-
-![Schema with name and description](../assets/schema-name-description.png)
+1. Last, provide a name and description on the right of the screen, and select **[!UICONTROL Save]**.
+    ![Schema with name and description](../assets/schema-name-description.png)
 
 Your schema has been created. Next, let's learn how to create a dataset to store your data.
 

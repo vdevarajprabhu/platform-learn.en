@@ -12,21 +12,13 @@ Now it's time to deploy the tag library onto your website.
 First, you must create a library that includes the extensions, rules, and data element you have created. 
 
 1. To create a library, select **[!UICONTROL Publishing Flow]** in the left side menu.
-
-1. Select **[!UICONTROL Add Library]**.
-
-You should see the library creation view.
-
-![tag library creation](../assets/tags-library-creation.png)
+1. Select **[!UICONTROL Add Library]**. You should see the library creation view.
+  ![tag library creation](../assets/tags-library-creation.png)
 
 1. Give the library a name, like **_Demo_**. 
-
 1. Select **[!UICONTROL Development]** in the [!UICONTROL Environment] dropdown. 
-
 1. Next, click **[!UICONTROL Add All Changed Resources]**.
-
 You should now see all your extensions, rules, and data element listed under [!UICONTROL Resource Changes]. 
-
 1. Click **[!UICONTROL Save & Build to Development]**.
 
 ## Add the embed code to your HTML
@@ -34,15 +26,10 @@ You should now see all your extensions, rules, and data element listed under [!U
 Now you must add a script tag to your product page HTML that loads the newly built tag library.
 
 1. Start by clicking **[!UICONTROL Environments]** in the left-hand menu. You should see three different environments listed. 
-
-![Tags environments](../assets/tags-environments.png)
-
+  ![Tags environments](../assets/tags-environments.png)
 1. Click the package icon on the **[!UICONTROL Development]** environment row under the _Install_ column. You should see instructions for installing the Launch library script onto your page.
-
-![Tags installation instructions](../assets/tags-installation-instructions.png)
-
+  ![Tags installation instructions](../assets/tags-installation-instructions.png)
 1. Copy the script tag (there's a copy-to-clipboard button for convenience). 
-
 1. Open your product page HTML and insert the script tag before the `</head>` tag. Your final HTML should look as follows:
 
 ```html

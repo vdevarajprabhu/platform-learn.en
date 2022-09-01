@@ -9,7 +9,9 @@ For this tutorial, you implement the Adobe Client Data Layer for a typical e-com
 
 Let's assume the user browses your products and clicks on a foam roller to learn more. The user lands on the foam roller product detail page.
 
-1. Create the simple product details page using the HTML code that follows:
+## Create a simple product details page
+
+1. Copy and paste the following code into a new HTML file and save it on your computer.
 
 ```html
 <!DOCTYPE html>
@@ -29,7 +31,9 @@ Let's assume the user browses your products and clicks on a foam roller to learn
 </html>
 ```
 
-As you may have noticed, inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. It's not necessary to place the `<script>` tag within `<head>`, but pushing data to the data layer as soon as possible helps ensure it's quickly available for the marketer to send to Adobe Experience Platform before the user leaves the page.
+Inside the `<head>` tag there is a `<script>` tag. This is where you place your JavaScript code. Although it's not required to place the `<script>` tag inside the `<head>` container, it is recommended. This ensures data is available to the data layer as soon as possible to support a variety of use cases.
+
+## Add the Adobe Data Layer
 
 1. Inside the `<script>` tag, add this code that creates the `adobeDataLayer` array and then pushes appropriate event and data information into the array. The data conforms to the XDM schema [you previously created](../configure-the-server/create-a-schema.md).
 
@@ -63,11 +67,11 @@ The first push to the data layer notifies listeners (tag rules) that the user ha
 
 The second push to the data layer notifies listeners (tags rules) that the user has viewed a product. It also adds product information to the data layer. 
 
-## Add to cart
+## Add code for cart add tracking
 
-You likely also want to track when the user clicks on the [!UICONTROL Add to cart] button.
+For this tutorial, you track when the user clicks on the [!UICONTROL Add to cart] button.
 
-1. To do this, copy and paste this code after the above data layer code. The function is called when the user clicks the [!UICONTROL Add to cart] button.
+1. Copy and paste this code after the data layer code. The function is called when the user clicks the [!UICONTROL Add to cart] button.
 
 ```js
 window.onAddToCartClick = function() {
@@ -85,7 +89,9 @@ window.onAddToCartClick = function() {
 };
 ```
 
-When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you push a `cartOpened` event into the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+This function initially checks to see whether a cart already exists for a user.  If the cart does not exist, you push a `cartOpened` event to the data layer. Later, you push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+
+## Add attribute to add to cart button
 
 1. Add an `onclick` attribute to the [!UICONTROL Add to cart] button that calls your new `onAddToCartClick` function.
 
@@ -142,11 +148,11 @@ The result of your HTML page should look as follows:
 </html>
 ```
 
-## Download the app
+## Add code for app download tracking
 
 One last thing to track is when the user clicks the _[!UICONTROL Download the app]_ link.
 
-1. To do this, copy and paste this code below the add to cart code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
+1. To do this, copy and paste this code below the cart add code. This function is called when the user clicks the _[!UICONTROL Download the app]_ link.
 
 ```js
 window.onDownloadAppClick = function(event) {
@@ -166,6 +172,8 @@ window.onDownloadAppClick = function(event) {
 ```
 
 In this case, the information about the link is wrapped inside an `eventInfo` key. As discussed in [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md), this tells the data layer to communicate this data along with the event, but to _not_ retain the data within the data layer. For a link click, it's not useful to add information about the clicked link to the data layer because it doesn't pertain to the page as a whole and is not applicable to other events that may occur.
+
+## Add attribute to download app link
 
 1. Add an `onclick` attribute to the [!UICONTROL Download the app] link that calls your new `onDownloadAppClick` function.
 
