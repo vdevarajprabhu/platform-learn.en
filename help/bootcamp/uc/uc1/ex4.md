@@ -76,6 +76,8 @@ Select **Visual** and set the **Activity URL** to `https://bootcamp.aepdemo.net/
 >
 >As an example, participant 1 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, participant 30 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
+Select the workspace **AT Bootcamp**.
+
 Click **Next**. 
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
@@ -95,6 +97,20 @@ You're now seeing the list of available audiences, and the Adobe Experience Plat
 Your Adobe Experience Platform segment is now part of this Experience Targeting Activity.
 
 ![RTCDP](./images/atform4.png)
+
+Before you can change the hero image, you'll need to click **Allow All** on the cookie banner. 
+
+To do so, go to **Browse**
+
+![RTCDP](./images/cook1.png)
+
+Next, click **Allow All**.
+
+![RTCDP](./images/cook2.png)
+
+Next, go back to **Compose**.
+
+![RTCDP](./images/cook3.png)
 
 Let's now change the hero image on the homepage of the website. Click the default hero image on the website, click **Replace Content** and then select **Image**.
 

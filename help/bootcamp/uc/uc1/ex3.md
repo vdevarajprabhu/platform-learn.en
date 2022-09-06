@@ -57,6 +57,10 @@ Every time you add an element to the segment builder, you can click the **Refres
 
 ![Segmentation](./images/refreshest.png)
 
+As **Evaluation Method**, select **Edge**.
+
+![Segmentation](./images/evedge.png)
+
 Finally, let's give your segment a name and save it.
 
 As a naming convention, use:
