@@ -14,4 +14,4 @@ Learn how to create policies to enforce customer's consent preferences. For more
 
 >[!IMPORTANT]
 >
-> Data hygiene capabilities in Adobe Experience Platform are currently only available for customers of Healthcare Shield.
+> Consent enforcement capabilities in Adobe Experience Platform are currently only available for customers of Healthcare Shield.
