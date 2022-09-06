@@ -75,7 +75,7 @@ Click **Ok**, followed by clicking **Cancel**.
 
 You've now finished this exercise.
 
-Next Step: [3.3 Create your push notification](./ex3.md)
+Next Step: [3.3 Create your journey and push notification](./ex3.md)
 
 [Go Back to User Flow 3](./uc3.md)
 

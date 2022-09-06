@@ -43,7 +43,7 @@ With Adobe Experience Platform, all IDs are equally important. Previously, the E
 
 Typically, the primary identifier depends on the context. If you ask your Call Center, **What is the most important ID?** they will probably answer, **the phone number!** But if you ask your CRM team, they will answer, **The email address!**  Adobe Experience Platform understands this complexity and manages it for you. Every application, whether an Adobe application or non-Adobe application, will speak with Adobe Experience Platform by referring to the ID they consider primary. And it simply works.
 
-For the field **Identity namespace**, select **ECID** and for the field **Identity Value** enter the email address you used to register in the previous exercise. Click **View**. You'll then see your profile in the list. Click the **Profile ID** to open your profile.
+For the field **Identity namespace**, select **ECID** and for the field **Identity Value** enter the ECID you can find on the Profile Viewer panel of the bootcamp website. Click **View**. You'll then see your profile in the list. Click the **Profile ID** to open your profile.
 
 ![Customer Profile](./images/popupecid.png)
 

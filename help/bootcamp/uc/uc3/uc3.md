@@ -31,15 +31,11 @@ In this exercise, you'll learn how to configure an event.
 
 In this exercise, you'll learn how to configure an event.
 
-[3.3 Create your push notification](./ex3.md)
+[3.3 Create your journey and push notification](./ex3.md)
 
-In this exercise, you'll learn how to configure a push notification.
+In this exercise, you'll learn how to configure a journey and a push notification and how to link your event and message to that journey.
 
-[3.4 Create your journey](./ex4.md)
-
-In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
-
-[3.5 Test your journey](./ex5.md)
+[3.4 Test your journey](./ex4.md)
 
 In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
