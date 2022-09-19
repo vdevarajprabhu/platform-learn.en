@@ -15,7 +15,7 @@ Experience Platform Mobile SDK is a client-side SDK that allows customers of Ado
 
 This tutorial guides you through the implementation of the Platform Mobile SDK in a sample retail app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) has functionality that lets you build a realistic implementation. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Platform Mobile SDK in your own mobile apps.
 
-The lessons are designed for iOS and written in Swift, but many of the concepts also apply to Android™.
+The lessons are designed for iOS and written in Swift, but many of the concepts also apply to Android&trade;.
 
 After completing this tutorial, you will be able to:
 
@@ -60,7 +60,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
     * A development **sandbox** which you can use for this tutorial.
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
 
-All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK. If your System Admins do not see the Adobe Experience Platform features in the Admin Console, as described above, please [request provisioning](http://adobe.ly/websdkaccess).
+All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK.
 
 Also, it is assumed that you are familiar with [!DNL Swift]. You do not need to be an expert to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
