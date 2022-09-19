@@ -15,7 +15,7 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 
 ## Experience Platform
 
-These features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-time CDP. If you don't see them, please [request access](http://adobe.ly/websdkaccess).
+These features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-time CDP.
 
 * Access to the **default production** sandbox. 
 * Access to **[!UICONTROL Manage Schemas]** and **[!UICONTROL View Schemas]** under **[!UICONTROL Data Modeling]**

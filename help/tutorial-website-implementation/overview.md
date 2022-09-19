@@ -51,7 +51,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 
 * For tags, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
-* For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
+* For Audience Manager, you must know your Audience Manager Subdomain (also known as the "Partner Name" "Partner ID," or "Partner Subdomain")
 
 Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be an expert in these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
@@ -76,7 +76,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 1. Because you will be using some browser-specific extensions, we recommend completing the tutorial using the [Chrome Web Browser](https://www.google.com/chrome/)
 1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
 1. Download the [sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As")
-1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
+1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](https://brackets.io/))
 1. Bookmark the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 >[!NOTE]
