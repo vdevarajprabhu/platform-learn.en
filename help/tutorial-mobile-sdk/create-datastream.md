@@ -11,7 +11,7 @@ A datastream is a server-side configuration on Platform Edge Network.  The datas
 
 ## Prerequisites
 
-To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]). [To request access, complete this form](http://adobe.ly/websdkaccess).
+To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions for [!UICONTROL Experience Platform] > [!UICONTROL Data Collection] > **[!UICONTROL Manage Datastreams]** and **[!UICONTROL View Datastreams]**.
 
 ## Learning objectives
 
