@@ -6,6 +6,7 @@ role: Data Architect, Data Engineer
 level: Intermediate
 kt: 11165
 thumbnail: 3409501.jpeg
+last-update-author: 20220927
 ---
 
 # Use enumerated fields and suggested values

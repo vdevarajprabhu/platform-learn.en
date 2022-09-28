@@ -7,19 +7,18 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 
 Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help learn this critical technology.
 
-## What's New
+## What's New{#whats-new-heading}
 
-* **[Server API overview (video)](server-api/overview.md)**
-    *Send data using a secure, authenticated server API.*
-* **[Implement Adobe Experience Cloud in mobile apps (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
-    *Implement Experience Cloud applications with Mobile SDK.*
-* **[Move client-side tags (tutorial)](event-forwarding/consider-moving-tags.md)**
-    *Consider moving client-side tags to event forwarding.*
+<ul id="whats-new-list">
+  <li><strong><a href="https://experienceleague.adobe.com/docs/platform-learn/data-collection/server-api/overview.html">Server API overview (video)</a></strong><br/><em>Send data using a secure, authenticated server API.</em></li>
+  <li><strong><a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html">Implement Adobe Experience Cloud in mobile apps (tutorial)</a></strong><br/><em>Implement Experience Cloud applications with Mobile SDK.</em></li>
+  <li><strong><a href="https://experienceleague.adobe.com/docs/platform-learn/data-collection/event-forwarding/consider-moving-tags.html">Move client-side tags (tutorial)</a></strong><br/><em>Consider moving client-side tags to event forwarding.</em></li>
+</ul>
 
 
-## Staff Picks
+## Staff Picks{#staff-picks-heading}
 
-<table>
+<table id="staff-picks-table">>
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
