@@ -6,6 +6,7 @@ role: Data Architect, Developer
 level: Intermediate
 kt: 11176
 thumbnail: 3409588.jpeg
+last-update-author: 20220928
 ---
 
 # Manage sensitive data in datastreams
