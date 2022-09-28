@@ -32,7 +32,7 @@ doc-type: video
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
-  + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md.md)
+  + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
