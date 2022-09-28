@@ -31,6 +31,8 @@ doc-type: video
   + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Dashboards {#dashboards}
+  + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
@@ -112,7 +114,7 @@ doc-type: video
   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
   + [Subscribe to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
   + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
-  + [Elevating the Marketer’s Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
+  + [Elevating the Marketer's Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
@@ -139,6 +141,7 @@ doc-type: video
   + [Create field groups](/help/platform/schemas/create-schema-field-groups.md)
   + [Create data types](/help/platform/schemas/create-data-types.md)
   + [Configure relationships between schemas](/help/platform/schemas/configure-relationships-between-schemas.md)
+  + [Use enumerated fields and suggested values](/help/platform/schemas/use-enumerated-fields.md)
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
   + [Update schemas](/help/platform/schemas/update-schemas.md)
   + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
